@@ -1,0 +1,170 @@
+
+body{
+    background-color: rgb(181, 18, 27);
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+.container {
+    background-color: black;
+    width: 800px;
+
+}
+ @media screen and (min-width: 960px) {
+            .container {
+                width: 800px;
+                height: 910px;
+                border-radius: 20px;
+            }
+
+        }
+
+        @media screen and (max-width: 960px) {
+            .container {
+                width: 100%;
+                height: 1200px;
+                border-radius: 0px;
+            }
+        }
+
+.butaoFinalizar {
+    background-color: rgb(181, 18, 27);
+    border: 1px solid white;
+    transition: 0.5s;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.butaoFinalizar:hover {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    background-color: rgb(181, 18, 27);
+    border: 1px solid white;
+    color: white;
+}
+
+.butaoVoltar {
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.butaoVoltar:hover {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.bottom {
+    margin-bottom: 8px;
+}
+
+.data {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mapaLugares {
+    font-size: 20px;
+}
+
+.textoMapaLugares {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    background-color: rgb(181, 18, 27);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.textoMapaLugares:hover {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.imgMapa {
+    border-radius: 5px;
+
+}
+
+.seatGap
+{
+  width:20px;
+}
+
+.seatVGap
+{
+  height:20px;
+}
+
+
+input[type=checkbox] {
+    width:0px;
+    margin-right:25px;
+
+}
+
+input[type=checkbox]:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    background-color:#ccc;
+}
+
+input[type=checkbox]:checked:before {
+    background-color:Green;
+}
+
+td {
+    font-size: 14px
+}
+
+
+.screen
+{
+  width:100%;
+  height:20px;
+  background-color: rgb(181, 18, 27);
+  color:#fff;
+  line-height:20px;
+  font-size:15px;
+}
+
+.top15 {
+    margin-top: 15px;
+}
+
+.valor {
+    font-size: 20px;
+    padding: 4px;
+    border: 1px solid white;
+}
+
+.confirm {
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+.confirm:hover {
+    color: white;
+}
+
+.quantIngressos {
+    margin-bottom: 14px;
+}

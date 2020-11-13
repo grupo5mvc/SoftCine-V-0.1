@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeLeaf.org" th:include="fragments/modelo :: modelo">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <div th:fragment="conteudo">
+        <br>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 imagensPassando">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/scooby.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Greenland.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/godzilla.png" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-3"><br>
+                    <h3 class="my-4 text-white text-center">Filmes em cartaz</h3>
+                    <a href="/filmeBilleTed" class="list-group-item">Bill & Ted: Encare a música</a>
+                    <a href="/filmeJovensBruxas" class="list-group-item">Jovens bruxas - Nova irmandade</a>
+                    <a href="/filmeDestruicaoFinal" class="list-group-item">Destruição Final – O Último Refúgio</a>
+                    <a href="/filmeScooby" class="list-group-item">Scooby! - O Filme</a>
+                    <a href="/filmeAmizadeMaldita" class="list-group-item">Amizade Maldita</a>
+                    <a href="/filmeConvencaoBruxas" class="list-group-item">Convenção das Bruxas</a>
+                    <a href="/filmeTenet" class="list-group-item">Tenet</a>
+                    <a href="/filmeGodzilla" class="list-group-item">Godzilla vs. Kong</a>
+                    <a href="/filmeNovosMutantes" class="list-group-item">Os Novos Mutantes</a>
+
+                    <!-- Tabela de Preços --> <br><br><br>
+                    <h3 class="my-4 text-white text-center">Tabela de Preços</h3>
+                    <div class="text-white">
+                        <div class="linha">Segunda: R$ 22,00 o dia todo</div>
+                        <div class="linha top">Terça: R$ 28,00 o dia todo</div>
+                        <div class="linha top">Quarta: R$ 24,00 o dia todo </div>
+                        <div class="linha top">Quinta: R$ 26,00 o dia todo </div>
+                        <div class="linha top">Sexta: R$ 26,00 o dia todo </div>
+                        <div class="linha top">Sábados: R$ 30,00 o dia todo </div>
+                        <div class="linha top">Domingo: R$ 32,00 o dia todo </div>
+                        <div class="linha top">Feriados: R$ 32,00 o dia todo </div>
+                    </div><br><br><br>
+
+
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-9">
+
+                    <h3 class="titulo">Filmes em Destaque:</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="/filmeBilleTed"><img class="card-img-top"
+                                                                  src="https://capas-p.imagemfilmes.com.br/164909_000_p.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="/filmeBilleTed">Bill & Ted: Encare a música</a>
+                                    </h4><br>
+                                    <p class="card-text">Classificação: 10 anos (Drogas Lícitas, Violência Fantasiosa)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="/filmeJovensBruxas"><img class="card-img-top"
+                                                                      src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/24072-cartaz.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="/filmeJovensBruxas">Jovens bruxas - Nova irmandade</a>
+                                    </h4><br>
+                                    <p class="card-text"> Classificação: 12 anos (Conteúdo Sexual, Linguagem Imprópria,
+                                        Violência)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="/filmeNovosMutantes"><img class="card-img-top"
+                                                                       src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/20534-cartaz.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="/filmeNovosMutantes">Os Novos Mutantes</a>
+                                    </h4><br>
+                                    <p class="card-text">Classificação: 14 anos (Conteúdo Sexual, Medo, Violência.)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="/filmeScooby"><img class="card-img-top"
+                                                                src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/23802-cartaz.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="/filmeScooby">Scooby! - O Filme</a>
+                                    </h4><br>
+                                    <p class="card-text">Classificação: Livre (Não Há Inadequações)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="/filmeAmizadeMaldita"><img class="card-img-top"
+                                                                        src="https://capas-p.imagemfilmes.com.br/164836_000_p.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="/filmeAmizadeMaldita">Amizade Maldita</a>                                    </h4><br>
+                                    <p class="card-text">Classificação: 14 anos (Drogas Lícitas, Linguagem Imprópria,
+                                        Violência)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9734; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="/filmeConvencaoBruxas"><img class="card-img-top"
+                                                                         src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/24074-cartaz.jpg" alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="/filmeConvencaoBruxas">Convenção das Bruxas
+                                        </a>
+                                    </h4>
+                                    <p class="card-text">Classificação: 10 anos (Drogas Lícitas, Linguagem Imprópria)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.col-lg-9 -->
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body, main {
+    margin:0;
+    padding:0;
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+    padding-bottom:10px;
+}
+
+
+
+.descricao {
+    font-weight: bold;
+}
+
+.botaoOpcoes {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.botaoOpcoes:hover {
+    font-family: 'Roboto Slab', serif;
+    text-decoration: black;
+    letter-spacing: 2px;
+    color: rgb(181, 18, 27);
+}
+
+.botaoOpcoesCor {
+    background-color: white;
+}

@@ -1,0 +1,37 @@
+nav img {
+    width: 70px;
+    margin-top: -25px;
+    margin-bottom: -15px;
+
+}
+
+.marginleft10 {
+    margin-left: 15px;
+}
+
+.marginleft50 {
+    margin-left: 50px;
+}
+
+
+.buttonColor{
+    border: 1px solid white;
+    color: white;
+}
+
+.buttonColor:hover {
+    color: black;
+    background-color: white;
+}
+
+nav {
+    font-family: 'Roboto Slab', serif;
+}
+
+.opcao {
+    border: 0px;
+}
+
+.opcao:hover {
+    border-bottom: 1.5px solid white;
+}

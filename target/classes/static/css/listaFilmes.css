@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
+}
+
