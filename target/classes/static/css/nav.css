@@ -14,9 +14,12 @@ nav img {
 }
 
 
-.buttonColor{
+.buttonColor {
+	padding: 5px 8px;
+	border-radius:5px;
     border: 1px solid white;
     color: white;
+    background-color: rgb(153, 12, 12);
 }
 
 .buttonColor:hover {

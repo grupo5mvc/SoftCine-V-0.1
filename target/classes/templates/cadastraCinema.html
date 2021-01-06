@@ -26,20 +26,27 @@
 </head>
 <body>
 <div th:fragment="conteudo">
-    <div class="container">
-        <form class="col-6"  method="post" th:object="${cinema}" th:action="@{/cadastra-cinema}" >
+    <div class="container text-center text-white"><br>
+            <div class="row">
+        <div class="col-md-4"></div>
+        <form class="col-md-4 border border-white rounded" method="post" th:object="${cinema}" th:action="@{/cadastra-cinema}" >
             <input type="hidden" th:field="*{cod_cinema}">
-            <h2>Novo Cinema</h2>
+            <br><br>
+            <h2>Cadastro de Cinema</h2>
+            <br><br>
             <div class="form-group">
                 <label>Nome do Cinema</label>
                 <input th:field="*{nome}" type="text" class="form-control">
-            </div>
+            </div><br>
             <div class="form-group">
                 <label>CNPJ do Cinema</label>
                 <input th:field="*{cnpj}" type="text" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div><br>
+            <button type="submit" class="btn btn-danger">Cadastrar</button><br><br><br>
         </form>
+                <div class="col-md-4"></div>
+        
+        </div><br>
     </div>
 </div>
 </body>
