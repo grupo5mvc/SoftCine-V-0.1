@@ -10,7 +10,11 @@ public class Controlador {
     
       return "home";
     }
+    @RequestMapping("/loginADM")
+    public String loginADM(){
 
+        return "loginADM";
+    }
 
     @RequestMapping("/listaFilmes")
     public String listaFilme(){
