@@ -1,54 +1,52 @@
-<html xmlns:th="http://www.w3.org/1999/xhtml" th:replace="fragments/modeloADM">
+<html xmlns:th="http://www.w3.org/1999/xhtml"
+	th:replace="fragments/modeloADM">
 <head>
-
 </head>
 
 <body>
 
-<div th:fragment="conteudo">
-    <div class="container">
-        <div class="row text-light bg-dark pt-3 pb-3 rounded" >
-            <div class="col-sm-auto align-middle">
-                <h2>Clientes Cadastrados</h2>
-            </div>
-            <div class="col">
-                <a href="/exibe-cadastro">
-                        <span class="h-100 d-inline-block">
-                               <span class="ml-1 mb-1 badge badge-primary">Adicionar novo Cliente</span>
-                        </span>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <table class="table table-dark table-hover">
-                <thead>
-                    <th>Cod_Cliente</th>
-                    <th>Nome</th>
-                    <th>Login</th>
-                    <th>Senha</th>
-                    <th>Email</th>
-                    <th>Ações</th>
-                </thead>
-                <tbody>
-                <tr th:each="cliente:${listaCliente}" th:object="${cliente}">
-                    <td th:text="*{cod_cliente}"></td>
-                    <td th:text="*{nome}"></td>
-                    <td th:text="*{login}"></td>
-                    <td th:text="*{senha}"></td>
-                    <td th:text="*{email}"></td>
-                    <td>
-                        <a th:href="@{/editar-cliente(cod_cliente=*{cod_cliente})}" class="badge badge-primary text-white">
-                            <span class="material-icons">Editar</span>
-                        </a>
-                        <a th:href="@{/excluir-cliente(cod_cliente=*{cod_cliente})}"class="badge badge-primary text-white">
-                            <span class="material-icons">Excluir</span>
-                        </a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+	<div th:fragment="conteudo">
+		<br>
+		<div class="container">
+			<div class="row text-light bg-dark pt-3 pb-3 rounded">
+				<div class="col-sm-auto align-middle">
+					<h2>Clientes Cadastrados</h2>
+				</div>
+				<div class="col">
+					<a href="/exibe-cadastro">
+					<span>Adicionar novo</span>
+							<span class="large material-icons">add_box</span>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<table class="table table-dark table-hover">
+					<thead>
+						<th>Cod_Cliente</th>
+						<th>Nome</th>
+						<th>Login</th>
+						<th>Email</th>
+						<th>Ações</th>
+					</thead>
+					<tbody>
+						<tr th:each="cliente:${listaCliente}" th:object="${cliente}">
+							<td th:text="*{cod_cliente}"></td>
+							<td th:text="*{nome}"></td>
+							<td th:text="*{login}"></td>
+							<td th:text="*{email}"></td>
+							<td><a
+								th:href="@{/editar-cliente(cod_cliente=*{cod_cliente})}"
+								class="badge bg-success text-white"> <span
+									class="material-icons">edit</span>
+							</a> <a th:href="@{/excluir-cliente(cod_cliente=*{cod_cliente})}"
+								class="badge bg-danger text-white"> <span
+									class="material-icons">delete</span>
+							</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

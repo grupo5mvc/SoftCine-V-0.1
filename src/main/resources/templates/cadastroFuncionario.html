@@ -33,30 +33,29 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form  method="post" th:object="${clientes}" th:action="@{/cadastra-cliente}">
-                        <input type="hidden" th:field="*{cod_cliente}">
+                    <form  method="post" th:object="${funcionarios}" th:action="@{/cadastra-funcionario}">
+                        <input type="hidden" th:field="*{cod_funcionario}">
                         <div class="input-group mb-3">
-                            <input type="text" th:field="*{email}" class="form-control input_user" value="" placeholder="Email">
+                            <input type="text" th:field="*{nome_func}" class="form-control input_user" value="" placeholder="Nome">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" th:field="*{login}" class="form-control input_pass" value="" placeholder="Usuário">
+                            <input type="text" th:field="*{email}" class="form-control input_pass" value="" placeholder="Email">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" th:field="*{nome}" class="form-control input_pass" value="" placeholder="nome">
+                            <input type="text" th:field="*{cargo}" class="form-control input_pass" value="" placeholder="Cargo">
                         </div>
-                        <div class="input-group mb-3">
-
-                            <input type="password" th:field="*{senha}" class="form-control input_pass" value=""
-                                placeholder="Senha">
+                          <div class="input-group mb-3">
+                            <input type="text" th:field="*{salario}" class="form-control input_pass" value="" placeholder="Salario">
                         </div>
+                        
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="submit"  class="btn login_btn">Cadastrar</button>
+                            <button type="submit" class="btn login_btn">Cadastrar</button>
                         </div>
                     </form>
                 </div>
                 <div class="mt-4">
                     <div class="d-flex justify-content-center links text-white">
-                        <a href="/exibeCliente" class="back">Voltar</a>
+                        <a href="/exibeFuncionario" class="back">Voltar</a>
                     </div>
                 </div>
             </div>

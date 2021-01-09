@@ -12,9 +12,8 @@
 				</div>
 				<div class="col">
 					<a href="/exibe-form">
-						<span class="h-100 d-inline-block">
-							<span class="ml-1 mb-1 badge badge-primary" >Adicionar novo Cinema</span>
-						</span>
+							<span>Adicionar novo</span>
+							<span class="large material-icons">add_box</span>
 					</a>
 				</div>
 			</div>
@@ -33,11 +32,11 @@
 							<td th:text="*{cnpj}"></td>
 							<td>
 							<a th:href="@{/editar-cinema(cod_cinema=*{cod_cinema})}"
-								class="badge badge-primary text-white"> <span
-									class="material-icons">Editar</span>
+								class="badge bg-success text-white"> <span
+									class="material-icons">edit</span>
 							</a>
-							<a th:href="@{/excluir-cinema(cod_cinema=*{cod_cinema})}" class="badge badge-primary text-white">
-								<span class="material-icons">Excluir</span>
+							<a th:href="@{/excluir-cinema(cod_cinema=*{cod_cinema})}" class="badge bg-danger text-white">
+								<span class="material-icons">delete</span>
 							</a>
 
 							</td>
