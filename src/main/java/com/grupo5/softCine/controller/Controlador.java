@@ -51,11 +51,7 @@ public class Controlador {
         return "esqueceuSenha";
     }
 
-    @RequestMapping("/cadastro")
-    public String cadastro() {
 
-        return "cadastro";
-    }
     @RequestMapping("/filmeBilleTed")
     public String filmeBilleTed() {
 

@@ -2,6 +2,7 @@ package com.grupo5.softCine.controller;
 
 
 import com.grupo5.softCine.DAO.ClienteDAO;
+import com.grupo5.softCine.dominio.Cinema;
 import com.grupo5.softCine.dominio.Cliente;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,7 +39,16 @@ public class ClienteControlador {
         }
         return "redirect:/exibeCliente";
     }
-
+    @GetMapping("/exibeForm-cliente")
+    public String exibeForm(Model model) {
+        model.addAttribute("cliente", new Cliente());
+        return "/cadastro";
+    }
+    @PostMapping("/clienteCadastro")
+    public String clienteCadastro(Cliente cliente) {
+        daoCliente.inserir(cliente);
+        return "/login";
+    }
     @GetMapping("/excluir-cliente")
     public String excluirCliente(@RequestParam(value = "cod_cliente",required = false)Integer cod_cliente){
         daoCliente.excluir(cod_cliente);
